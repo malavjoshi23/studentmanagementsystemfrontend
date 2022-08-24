@@ -24,6 +24,12 @@ public class StudentController {
 //            )
 //    );
 
+    @GetMapping
+    public String displayWelcomeMessage(){
+        return "<h1>Welcome User</h1>";
+    }
+
+
     // Mappings - URL endpoints
     // Get the list of all student
     @GetMapping("/listStudents")
